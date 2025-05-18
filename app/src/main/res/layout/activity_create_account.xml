@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="70dp"
-        android:text="Hi, Welcome!"
+        android:text="Create Account"
         android:layout_marginLeft="20dp"
         android:textSize="35dp"
         android:fontFamily="@font/kanit_bold"/>
@@ -40,32 +40,36 @@
         android:layout_centerInParent="true"
         android:layout_height="40dp"/>
 
+    <EditText
+        android:id="@+id/confirmPassTxt"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/passTxt"
+        android:layout_width="320dp"
+        android:hint="CONFIRM PASSWORD"
+        android:background="@drawable/rounded_transparent"
+        android:fontFamily="@font/karla_regular"
+        android:paddingLeft="20dp"
+        android:textSize="13dp"
+        android:layout_centerInParent="true"
+        android:layout_height="40dp"/>
+
     <Button
         android:id="@+id/signBtn"
-        android:layout_below="@id/passTxt"
-        android:layout_marginTop="50dp"
+        android:layout_below="@id/confirmPassTxt"
+        android:layout_marginTop="35dp"
         android:layout_width="300dp"
         android:textAlignment="center"
         android:textColor="#FFF"
         android:backgroundTint="#7C7CFF"
-        android:text="SIGN IN"
+        android:text="SIGN UP"
         android:fontFamily="@font/karla_regular"
         android:layout_centerInParent="true"
         android:layout_height="50dp"/>
-    <Button
-        android:id="@+id/forgotPass"
-        android:layout_below="@id/signBtn"
-        android:text="Forgot Password?"
-        android:textSize="10sp"
-        android:textColor="#7C7CFF"
-        android:background="@drawable/transparent"
-        android:layout_centerInParent="true"
-        android:layout_width="150dp"
-        android:fontFamily="@font/karla_regular"
-        android:layout_height="50dp"/>
+
     <View
         android:id="@+id/divider"
-        android:layout_below="@id/forgotPass"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/signBtn"
         android:layout_width="300dp"
         android:background="#252525"
         android:layout_centerInParent="true"
@@ -85,13 +89,13 @@
             android:id="@+id/textViewPrompt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Don't have an account?"
+            android:text="Already have an account?"
             android:fontFamily="@font/karla_regular"
             android:textSize="12sp"/>
 
         <Button
             android:id="@+id/signUpButton"
-            android:text="Sign up"
+            android:text="Log in"
             android:textSize="12sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
